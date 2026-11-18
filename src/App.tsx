@@ -116,8 +116,9 @@ function App() {
             <h2>Reliable systems.<br />Real-world impact.</h2>
           </div>
           <div className="about-copy">
-            <p>I'm Simran Gollapudi, a software engineer based in Chicago. At Codagami, I work on McDonald's production systems — from observability and automated testing to digital receipts and Point of Service workflows.</p>
-            <p>My experience spans JavaScript enterprise applications, C#/.NET microservices, computer vision, and infrastructure data visualization. I work closely with product, QA, and business teams to deliver reliable software.</p>
+            <p>I'm Simran, a Chicago-based software engineer with 5+ years of experience, specializing in enterprise applications, test automation, and production reliability. I build software that scales, simplifies complex workflows, and delivers measurable results.</p>
+            <p>My expertise is in building and improving enterprise applications using C#/.NET, JavaScript, REST APIs, and automated testing. I have delivered production features for McDonald’s systems and developed .NET applications for infrastructure analysis. </p>
+            <p>I have experience in cross-functional collaboration, release quality, and using coding agents as development tools. I am also pursuing an M.S. in Computer Science at Georgia Tech, expected to graduate Fall 2027.</p>
             <h4>LANGUAGES</h4>
             <p>Java · C# · JavaScript · SQL · C++</p>
             <h4>FRAMEWORKS</h4>
@@ -126,7 +127,6 @@ function App() {
             <p>Git · New Relic · CI/CD · REST APIs · Agile</p>
             <h4>TESTING</h4>
             <p>Playwright · Automated testing · Integration testing</p>
-            <p className="membership">Member — Women in Computing Sciences, University of Iowa</p>
           </div>
         </section>
 
