@@ -24,9 +24,7 @@ function App() {
                 <span>From Development<br />to Delivery.</span>
               </h1>
               <p className="intro">
-                Hi, I'm Simran —  a Chicago-based software engineer with over five years of
-                 experience developing enterprise applications, backend services, and full-stack software. My background includes C#/.NET, JavaScript, and building software used in production.
-              </p>
+                Hi, I'm Simran, a Chicago-based software engineer with over five years of experience developing enterprise applications and backend systems. My work spans C#/.NET, JavaScript, and full-stack development.
               <div className="hero-links">
                 <a href="#work" className="primary-link">Explore my work ↘</a>
                 <a href="/resume.pdf" target="_blank">View résumé ↗</a>
@@ -48,7 +46,7 @@ function App() {
                 {'    '}<span className="string">"JavaScript"</span>, <span className="string">"C#"</span>,{'\n'}
                 {'    '}<span className="string">"Playwright"</span>, <span className="string">".NET 5"</span>{'\n'}
                 {'  '}],{'\n'}
-                {'  '}focus: <span className="string">"Reliable production systems"</span>{'\n'}
+                {'  '}focus: <span className="string">"Backend & full-stack engineering"</span>{'\n'}
                 {'}'}
               </pre>
               <div className="code-footer">➜ Ready to build something great.</div>
@@ -56,7 +54,7 @@ function App() {
           </div>
 
           <div className="hero-bottom">
-            <span>BASED IN CHICAGO, IL · SOFTWARE ENGINEER</span>
+            <span>SOFTWARE ENGINEER · M.S. COMPUTER SCIENCE @ GEORGIA TECH</span>
             <span>SCROLL TO EXPLORE ↓</span>
           </div>
         </section>
