@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <header className="navbar">
-        <a className="logo" href="#">sg.</a>
+        <a className="logo" href="#">SG.</a>
         <nav>
           <a href="#work">Work</a>
           <a href="#about">About</a>
@@ -25,6 +25,7 @@ function App() {
               </h1>
               <p className="intro">
                 Hi, I'm Simran, a Chicago-based software engineer with over five years of experience developing enterprise applications and backend systems. My work spans C#/.NET, JavaScript, and full-stack development.
+                </p>
               <div className="hero-links">
                 <a href="#work" className="primary-link">Explore my work ↘</a>
                 <a href="/resume.pdf" target="_blank">View résumé ↗</a>
