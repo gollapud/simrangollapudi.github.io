@@ -16,16 +16,16 @@ function App() {
 
       <main>
         <section className="hero">
-          <div className="eyebrow">SIMRAN GOLLAPUDI / SOFTWARE ENGINEER</div>
+          <div className="eyebrow">SOFTWARE ENGINEER | 5+ Years of Experience</div>
 
           <div className="hero-content">
             <div>
-              <h1>Thoughtful code.<br />
-                <span>Meaningful<br />experiences.</span>
+              <h1>Software Engineering, <br />
+                <span>From Development<br />to Delivery.</span>
               </h1>
               <p className="intro">
-                Hi, I'm Simran — a Chicago-based software engineer building
-                reliable enterprise software, automated tests, and better systems.
+                Hi, I'm Simran —  a Chicago-based software engineer with over five years of
+                 experience developing enterprise applications, backend services, and full-stack software. My background includes C#/.NET, JavaScript, and building software used in production.
               </p>
               <div className="hero-links">
                 <a href="#work" className="primary-link">Explore my work ↘</a>
