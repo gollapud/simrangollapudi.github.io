@@ -1,14 +1,19 @@
 
-import './App.css'
+import './App.css';
+import ProjectCard from './components/ProjectCard';
+import { projects } from './data/projects';
 
 function App() {
+  const featuredProjects = projects.filter(project => project.featured);
+  const additionalProjects = projects.filter(project => !project.featured);
+
   return (
     <>
       <header className="navbar">
         <a className="logo" href="#">SG.</a>
         <nav>
-          <a href="#work">Work</a>
           <a href="#about">About</a>
+          <a href="#work">Projects</a>
           <a href="#experience">Experience</a>
           <a href="#contact">Let's talk ↗</a>
         </nav>
@@ -68,51 +73,9 @@ function App() {
           </div>
         </section>
 
-        <section className="section" id="work">
-          <div className="section-label">01 / SELECTED IMPACT</div>
-          <div className="section-heading">
-            <h2>Engineering that delivers.</h2>
-            <p>Highlights from my professional work.</p>
-          </div>
-
-          <div className="project-grid">
-            <article className="project-card">
-              <span className="company">CODAGAMI / MCDONALD'S</span>
-              <div className="metric">368 <small>regression tests per deployment</small></div>
-              <h3>Release confidence, automated</h3>
-              <p>Built a scalable end-to-end testing framework that reduced release validation from 2 days to 4 hours.</p>
-              <span className="tags">PLAYWRIGHT · JAVASCRIPT · CI/CD</span>
-            </article>
-
-            <article className="project-card">
-              <span className="company">CODAGAMI / MCDONALD'S</span>
-              <div className="metric">26 <small>production services instrumented</small></div>
-              <h3>Production visibility, end to end</h3>
-              <p>Integrated New Relic telemetry for real-time monitoring, proactive incident detection, and performance optimization.</p>
-              <span className="tags">NEW RELIC · OBSERVABILITY</span>
-            </article>
-
-            <article className="project-card">
-              <span className="company">CODAGAMI / MCDONALD'S</span>
-              <div className="metric">15 <small>restaurant locations</small></div>
-              <h3>Digital receipts at the kiosk</h3>
-              <p>Designed, developed, and deployed a QR code-based digital receipt solution, eliminating printed receipts across 15 locations.</p>
-              <span className="tags">JAVASCRIPT · KIOSK PLATFORM</span>
-            </article>
-
-            <article className="project-card">
-              <span className="company">HERZOG TECHNOLOGIES</span>
-              <div className="metric">86% <small>LiDAR object detection accuracy</small></div>
-              <h3>Computer vision for infrastructure</h3>
-              <p>Engineered a standalone computer vision application with asynchronous RESTful microservices for infrastructure data analysis.</p>
-              <span className="tags">C# · .NET 5 · REST APIs</span>
-            </article>
-          </div>
-        </section>
-
         <section className="section about-section" id="about">
           <div>
-            <div className="section-label">02 / THE PERSON BEHIND THE CODE</div>
+            <div className="section-label">01 / THE PERSON BEHIND THE CODE</div>
             <h2>An Engineering Mindset.<br />An Evolving Skill Set.</h2>
           </div>
           <div className="about-copy">
@@ -129,6 +92,26 @@ function App() {
             <p>Git · New Relic · CI/CD · Agile · AI-assisted development</p>
             <h4>TESTING & QUALITY</h4>
             <p>Playwright · Regression testing · Integration testing · Test automation</p>
+          </div>
+        </section>
+
+        <section className="section" id="work">
+          <div className="section-label">02 / SELECTED PROJECTS</div>
+          <div className="section-heading">
+            <h2>Engineering beyond the workplace.</h2>
+            <p>Personal and academic software projects.</p>
+          </div>
+          <h4 className="project-group-label">Featured Projects</h4>
+          <div className="project-grid featured-project-grid">
+            {featuredProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
+          <h4 className="project-group-label">Additional Projects</h4>
+          <div className="additional-project-grid">
+            {additionalProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+            ))}
           </div>
         </section>
 
@@ -210,8 +193,50 @@ function App() {
           </div>
         </section>
 
+        <section className="section" id="impact">
+          <div className="section-label">04 / SELECTED IMPACT</div>
+          <div className="section-heading">
+            <h2>Engineering that delivers.</h2>
+            <p>Highlights from my professional work.</p>
+          </div>
+
+          <div className="project-grid">
+            <article className="project-card">
+              <span className="company">CODAGAMI / MCDONALD'S</span>
+              <div className="metric">368 <small>regression tests per deployment</small></div>
+              <h3>Release confidence, automated</h3>
+              <p>Built a scalable end-to-end testing framework that reduced release validation from 2 days to 4 hours.</p>
+              <span className="tags">PLAYWRIGHT · JAVASCRIPT · CI/CD</span>
+            </article>
+
+            <article className="project-card">
+              <span className="company">CODAGAMI / MCDONALD'S</span>
+              <div className="metric">26 <small>production services instrumented</small></div>
+              <h3>Production visibility, end to end</h3>
+              <p>Integrated New Relic telemetry for real-time monitoring, proactive incident detection, and performance optimization.</p>
+              <span className="tags">NEW RELIC · OBSERVABILITY</span>
+            </article>
+
+            <article className="project-card">
+              <span className="company">CODAGAMI / MCDONALD'S</span>
+              <div className="metric">15 <small>restaurant locations</small></div>
+              <h3>Digital receipts at the kiosk</h3>
+              <p>Designed, developed, and deployed a QR code-based digital receipt solution, eliminating printed receipts across 15 locations.</p>
+              <span className="tags">JAVASCRIPT · KIOSK PLATFORM</span>
+            </article>
+
+            <article className="project-card">
+              <span className="company">HERZOG TECHNOLOGIES</span>
+              <div className="metric">86% <small>LiDAR object detection accuracy</small></div>
+              <h3>Computer vision for infrastructure</h3>
+              <p>Engineered a standalone computer vision application with asynchronous RESTful microservices for infrastructure data analysis.</p>
+              <span className="tags">C# · .NET 5 · REST APIs</span>
+            </article>
+          </div>
+        </section>
+
         <section className="section education">
-          <div className="section-label">04 / EDUCATION</div>
+          <div className="section-label">05 / EDUCATION</div>
           <h2>Education</h2>
           <div className="job">
             <div><h3>Georgia Institute of Technology</h3></div>
@@ -224,7 +249,7 @@ function App() {
         </section>
 
         <section className="contact-section" id="contact">
-          <div className="section-label">05 / LET'S CONNECT</div>
+          <div className="section-label">06 / LET'S CONNECT</div>
           <h2>Let's make<br />something matter.</h2>
           <a className="contact-link" href="mailto:simrangollapudi@gmail.com">Contact me ↗</a>
           <p>Have an interesting project, a role, or just a good conversation?<br />I'd love to hear from you.</p>
