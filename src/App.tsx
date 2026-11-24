@@ -37,7 +37,7 @@ function App() {
                   href={`${import.meta.env.BASE_URL}Simran_Gollapudi.Resume.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
-                >View résumé ↗ </a>
+                  >View résumé ↗</a>
               </div>
             </div>
 
