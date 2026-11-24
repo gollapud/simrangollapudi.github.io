@@ -33,7 +33,11 @@ function App() {
                 </p>
               <div className="hero-links">
                 <a href="#experience" className="primary-link">Explore my work ↘</a>
-                <a href="/resume.pdf" target="_blank">View résumé ↗</a>
+                <a
+                  href={`${import.meta.env.BASE_URL}Simran_Gollapudi.Resume.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >View résumé ↗ </a>
               </div>
             </div>
 
@@ -103,7 +107,7 @@ function App() {
           <div className="job">
             <div><h3>Codagami, Inc.</h3><span>2022 — PRESENT</span></div>
             <div>
-              <h4>Software Engineer · Champaign, IL</h4>
+              <h4>Software Developer · Champaign, IL</h4>
               <p>Developing and maintaining McDonald's self-service ordering and Point of Service software, with responsibilities spanning feature development, production support, test automation, and release management.</p>
               <ul>
                 <li>Developed and refactored C#/.NET business logic, REST API integrations, and PIN pad initialization workflows within the Point of Service platform.</li>
@@ -228,7 +232,10 @@ function App() {
             <a href="tel:+17324397462">+1 732-439-7462</a>
             <a href="https://github.com/gollapud" target="_blank" rel="noreferrer" > GitHub ↗ </a>
             <a href="https://linkedin.com/in/simrangollapudi" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-            <a href="/resume.pdf" download="Simran_Gollapudi_Resume.pdf"> Download résumé ↓ </a>
+            <a
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
+              download="Simran_Gollapudi.Resume.pdf"
+              >Download résumé ↓</a>
           </div>
         </section>
       </main>
