@@ -20,7 +20,7 @@ function App() {
 
           <div className="hero-content">
             <div>
-              <h1>From complex problems, <br />
+              <h1>From complex problems <br />
                 <span>to working software.</span>
               </h1>
               <p className="intro">
@@ -35,22 +35,22 @@ function App() {
             <div className="code-window">
               <div className="code-header">
                 <span>developer.js</span>
-                <span>● ● ●</span>
               </div>
               <pre>
-                <span className="comment">// A little about me</span>{'\n\n'}
                 <span className="keyword">const</span> developer = {'{'}{'\n'}
                 {'  '}name: <span className="string">"Simran Gollapudi"</span>,{'\n'}
                 {'  '}role: <span className="string">"Software Engineer"</span>,{'\n'}
                 {'  '}basedIn: <span className="string">"Chicago, IL"</span>,{'\n'}
                 {'  '}stack: [{'\n'}
-                {'    '}<span className="string">"C#"</span>, <span className="string">"".NET"</span>, <span className="string">"JavaScript"</span>,{'\n'}
+                {'    '}<span className="string">"C#"</span>, <span className="string">".NET"</span>, <span className="string">"JavaScript"</span>,{'\n'}
                 {'    '}<span className="string">"React"</span>, <span className="string">"SQL Server"</span>, <span className="string">"Playwright"</span>{'\n'}
                 {'  '}],{'\n'}
-                {'  '}focus: <span className="string">"Backend engineering"</span>,{'\n'}
-                {'  '}<span className="string">"Full-stack development"</span>,{'\n'}
-                {'  '}<span className="string">"Test automation"</span>,{'\n'}
-                {'}'}
+                {'  '}focus: [{'\n'}
+                {'    '}<span className="string">"Backend engineering"</span>,{'\n'}
+                {'    '}<span className="string">"Full-stack development"</span>,{'\n'}
+                {'    '}<span className="string">"Test automation"</span>{'\n'}
+                {'  '}]{'\n'}
+                {'};'}
               </pre>
             </div>
           </div>
@@ -167,12 +167,23 @@ function App() {
             <div><h3>Herzog Technologies, Inc.</h3><span>2021 — 2022</span></div>
             <div>
               <h4>Software Engineer · Cedar Rapids, IA</h4>
+              <p>Developed software for railroad infrastructure and maintenance operations, working on an integrated system that leveraged LiDAR data for computer vision, infrastructure visualization, and data processing.</p>
               <ul>
-                <li>Built a LiDAR computer vision application with C#, .NET 5, and asynchronous RESTful microservices, achieving 86% detection accuracy.</li>
-                <li>Transformed over 300 miles of railroad infrastructure data into interactive Track Chart visualizations, enabling technicians to validate mission-critical data with 100% accuracy.</li>
-                <li>Redesigned C# and Entity Framework Core data pipelines, reducing ongoing IT maintenance costs by 33%.</li>
-                <li>Presented software development best practices to promote code quality and maintainability across the team.</li>
+                <li>Developed a LiDAR-based computer vision application using C#, .NET 5, and asynchronous RESTful microservices, achieving 86% detection accuracy.</li>
+                <li>Developed a Track Chart generator that transformed over 300 miles of railroad infrastructure data into interactive visualizations, enabling technicians to identify ballast requirements, document no-dump zones, and validate infrastructure data.</li>
+                <li>Redesigned backend data processing pipelines using C#, Entity Framework Core, and SQL Server, reducing ongoing IT maintenance costs by 33%.</li>
+                <li>Presented software development best practices to the engineering team, emphasizing code quality and maintainability.</li>
               </ul>
+              <div className="job-technologies">
+                <h5>Technologies</h5>
+                <div className="technology-tags">
+                  {["C#", ".NET 5", "Entity Framework Core", "SQL Server", "REST APIs", "Microservices", "LiDAR", "Computer Vision"].map((technology) => (
+                  <span className="technology-tag" key={technology}>
+                    {technology}
+                  </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
@@ -180,10 +191,21 @@ function App() {
             <div><h3>Nationwide Insurance</h3><span>2020</span></div>
             <div>
               <h4>Software Engineering Intern · Des Moines, IA</h4>
+              <p>Contributed to the development of Nationwide's enterprise Insurance Agent Portal, gaining experience in application development and collaborative software engineering within the insurance industry.</p>
               <ul>
-                <li>Developed customer-facing functionality for the enterprise Insurance Agent Portal using JavaScript.</li>
-                <li>Contributed to design discussions, requirements analysis, and architecture decisions to improve usability and maintainability.</li>
+                <li>Developed user-facing functionality using JavaScript to support insurance agents within the enterprise portal.</li>
+                <li>Participated in technical design discussions, requirements analysis, and application architecture decisions, with an emphasis on usability and maintainability.</li>
               </ul>
+              <div className="job-technologies">
+                <h5>Technologies</h5>
+                <div className="technology-tags">
+                  {["JavaScript", "TypeScript", "Java", "HTML", "CSS", "REST APIs", "Git", "Jira", "Agile", "Scrum", "Unit Testing"].map((technology) => (
+                  <span className="technology-tag" key={technology}>
+                    {technology}
+                  </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
