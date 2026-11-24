@@ -37,7 +37,7 @@ h2 {
 .code-header,
 .job > div > span {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: .08em;
 }
 
@@ -68,13 +68,18 @@ h2 {
   font-size: 13px;
 }
 
-.project-card p,
 .job p,
 .job li,
 .about-copy p {
   color: var(--color-body);
-  font-size: 13px;
-  line-height: 1.8;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.project-card p {
+  color: var(--color-body);
+  font-size: 14px;
+  line-height: 1.75;
 }
 
 
