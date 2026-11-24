@@ -13,8 +13,8 @@ function App() {
         <a className="logo" href="#">SG.</a>
         <nav>
           <a href="#about">About</a>
-          <a href="#work">Projects</a>
           <a href="#experience">Experience</a>
+          <a href="#work">Projects</a>
           <a href="#contact">Let's talk ↗</a>
         </nav>
       </header>
@@ -32,7 +32,7 @@ function App() {
                 Hi, I'm Simran, a Chicago-based software engineer with over five years of experience building enterprise applications and backend systems. My work spans full-stack development, software architecture, and test automation, with an emphasis on reliability and maintainability.
                 </p>
               <div className="hero-links">
-                <a href="#work" className="primary-link">Explore my work ↘</a>
+                <a href="#experience" className="primary-link">Explore my work ↘</a>
                 <a href="/resume.pdf" target="_blank">View résumé ↗</a>
               </div>
             </div>
@@ -95,28 +95,8 @@ function App() {
           </div>
         </section>
 
-        <section className="section" id="work">
-          <div className="section-label">02 / SELECTED PROJECTS</div>
-          <div className="section-heading">
-            <h2>Engineering beyond the workplace.</h2>
-            <p>Personal and academic software projects.</p>
-          </div>
-          <h4 className="project-group-label">Featured Projects</h4>
-          <div className="project-grid featured-project-grid">
-            {featuredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-            ))}
-          </div>
-          <h4 className="project-group-label">Additional Projects</h4>
-          <div className="additional-project-grid">
-            {additionalProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-            ))}
-          </div>
-        </section>
-
         <section className="section" id="experience">
-          <div className="section-label">03 / PROFESSIONAL EXPERIENCE</div>
+          <div className="section-label">02 / PROFESSIONAL EXPERIENCE</div>
           <h2>Engineering Across Industries.<br />Experience Across Technologies.</h2>
           <p className="section-description">Enterprise platforms, infrastructure tools, and customer-facing applications.</p>
 
@@ -193,66 +173,56 @@ function App() {
           </div>
         </section>
 
-        <section className="section" id="impact">
-          <div className="section-label">04 / SELECTED IMPACT</div>
+        <section className="section" id="work">
+          <div className="section-label">03 / SELECTED PROJECTS</div>
           <div className="section-heading">
-            <h2>Engineering that delivers.</h2>
-            <p>Highlights from my professional work.</p>
+            <h2>Engineering beyond the workplace.</h2>
+            <p>Personal and academic software projects.</p>
           </div>
-
-          <div className="project-grid">
-            <article className="project-card">
-              <span className="company">CODAGAMI / MCDONALD'S</span>
-              <div className="metric">368 <small>regression tests per deployment</small></div>
-              <h3>Release confidence, automated</h3>
-              <p>Built a scalable end-to-end testing framework that reduced release validation from 2 days to 4 hours.</p>
-              <span className="tags">PLAYWRIGHT · JAVASCRIPT · CI/CD</span>
-            </article>
-
-            <article className="project-card">
-              <span className="company">CODAGAMI / MCDONALD'S</span>
-              <div className="metric">26 <small>production services instrumented</small></div>
-              <h3>Production visibility, end to end</h3>
-              <p>Integrated New Relic telemetry for real-time monitoring, proactive incident detection, and performance optimization.</p>
-              <span className="tags">NEW RELIC · OBSERVABILITY</span>
-            </article>
-
-            <article className="project-card">
-              <span className="company">CODAGAMI / MCDONALD'S</span>
-              <div className="metric">15 <small>restaurant locations</small></div>
-              <h3>Digital receipts at the kiosk</h3>
-              <p>Designed, developed, and deployed a QR code-based digital receipt solution, eliminating printed receipts across 15 locations.</p>
-              <span className="tags">JAVASCRIPT · KIOSK PLATFORM</span>
-            </article>
-
-            <article className="project-card">
-              <span className="company">HERZOG TECHNOLOGIES</span>
-              <div className="metric">86% <small>LiDAR object detection accuracy</small></div>
-              <h3>Computer vision for infrastructure</h3>
-              <p>Engineered a standalone computer vision application with asynchronous RESTful microservices for infrastructure data analysis.</p>
-              <span className="tags">C# · .NET 5 · REST APIs</span>
-            </article>
+          <h4 className="project-group-label">Featured Projects</h4>
+          <div className="project-grid featured-project-grid">
+            {featuredProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
+          <h4 className="project-group-label">Additional Projects</h4>
+          <div className="additional-project-grid">
+            {additionalProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+            ))}
           </div>
         </section>
 
-        <section className="section education">
-          <div className="section-label">05 / EDUCATION</div>
+        <section className="section education" id="education">
+          <div className="section-label">04 / EDUCATION</div>
           <h2>Education</h2>
-          <div className="job">
-            <div><h3>Georgia Institute of Technology</h3></div>
-            <div><h4>Master of Science in Computer Science</h4><p>College of Computing · Atlanta, GA · Expected Fall 2027</p></div>
+          <div className="education-entry">
+            <h3>Georgia Institute of Technology</h3>
+            <h4>Master of Science in Computer Science</h4>
+            <p>College of Computing · Atlanta, GA · Expected Fall 2027</p>
+          <div className="education-coursework">
+            <h5>Selected Graduate Coursework</h5>
+            <ul>
+              <li>CS 6515 · Graduate Algorithms</li>
+              <li>CS 7470 · Mobile and Ubiquitous Computing</li>
+              <li>CS 6750 · Human-Computer Interaction</li>
+             <li>CS 6435 · Digital Health Equity</li>
+            </ul>
           </div>
-          <div className="job">
-            <div><h3>University of Iowa</h3></div>
-            <div><h4>Bachelor of Science in Computer Science</h4><p>College of Liberal Arts and Sciences · Iowa City, IA · May 2021</p></div>
+          </div>
+
+          <div className="education-entry">
+            <h3>University of Iowa</h3>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <p>College of Liberal Arts and Sciences · Iowa City, IA · May 2021</p>
           </div>
         </section>
 
         <section className="contact-section" id="contact">
-          <div className="section-label">06 / LET'S CONNECT</div>
-          <h2>Let's make<br />something matter.</h2>
+          <div className="section-label">05 / LET'S CONNECT</div>
+          <h2>Let's connect.</h2>
           <a className="contact-link" href="mailto:simrangollapudi@gmail.com">Contact me ↗</a>
-          <p>Have an interesting project, a role, or just a good conversation?<br />I'd love to hear from you.</p>
+          <p>I'm always interested in discussing software engineering opportunities, technical projects, and new ideas.</p>
           <div className="contact-details">
             <a href="mailto:simrangollapudi@gmail.com">simrangollapudi@gmail.com</a>
             <a href="tel:+17324397462">+1 732-439-7462</a>
@@ -265,7 +235,7 @@ function App() {
 
       <footer>
         <span>© 2026 Simran Gollapudi</span>
-        <span>DESIGNED WITH INTENTION. BUILT WITH CARE.</span>
+        <span>DESIGNED IN FIGMA · BUILT WITH REACT & TYPESCRIPT</span>
         <a href="#">Back to top ↑</a>
       </footer>
     </>
