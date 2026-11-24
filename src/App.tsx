@@ -20,11 +20,11 @@ function App() {
 
           <div className="hero-content">
             <div>
-              <h1>Software Engineering, <br />
-                <span>From Development<br />to Delivery.</span>
+              <h1>From complex problems, <br />
+                <span>to working software.</span>
               </h1>
               <p className="intro">
-                Hi, I'm Simran, a Chicago-based software engineer with over five years of experience developing enterprise applications and backend systems. My work spans C#/.NET, JavaScript, and full-stack development.
+                Hi, I'm Simran, a Chicago-based software engineer with over five years of experience building enterprise applications and backend systems. My work spans full-stack development, software architecture, and test automation, with an emphasis on reliability and maintainability.
                 </p>
               <div className="hero-links">
                 <a href="#work" className="primary-link">Explore my work ↘</a>
@@ -44,18 +44,19 @@ function App() {
                 {'  '}role: <span className="string">"Software Engineer"</span>,{'\n'}
                 {'  '}basedIn: <span className="string">"Chicago, IL"</span>,{'\n'}
                 {'  '}stack: [{'\n'}
-                {'    '}<span className="string">"JavaScript"</span>, <span className="string">"C#"</span>,{'\n'}
-                {'    '}<span className="string">"Playwright"</span>, <span className="string">".NET 5"</span>{'\n'}
+                {'    '}<span className="string">"C#"</span>, <span className="string">"".NET"</span>, <span className="string">"JavaScript"</span>,{'\n'}
+                {'    '}<span className="string">"React"</span>, <span className="string">"SQL Server"</span>, <span className="string">"Playwright"</span>{'\n'}
                 {'  '}],{'\n'}
-                {'  '}focus: <span className="string">"Backend & full-stack engineering"</span>{'\n'}
+                {'  '}focus: <span className="string">"Backend engineering"</span>,{'\n'}
+                {'  '}<span className="string">"Full-stack development"</span>,{'\n'}
+                {'  '}<span className="string">"Test automation"</span>,{'\n'}
                 {'}'}
               </pre>
-              <div className="code-footer">➜ Ready to build something great.</div>
             </div>
           </div>
 
           <div className="hero-bottom">
-            <span>SOFTWARE ENGINEER · M.S. COMPUTER SCIENCE @ GEORGIA TECH</span>
+            <span>SOFTWARE ENGINEER · M.S. COMPUTER SCIENCE CANDIDATE @ GEORGIA TECH</span>
             <span>SCROLL TO EXPLORE ↓</span>
           </div>
         </section>
@@ -112,38 +113,53 @@ function App() {
         <section className="section about-section" id="about">
           <div>
             <div className="section-label">02 / THE PERSON BEHIND THE CODE</div>
-            <h2>Reliable systems.<br />Real-world impact.</h2>
+            <h2>An Engineering Mindset.<br />An Evolving Skill Set.</h2>
           </div>
           <div className="about-copy">
-            <p>I'm Simran, a Chicago-based software engineer with 5+ years of experience, specializing in enterprise applications, test automation, and production reliability. I build software that scales, simplifies complex workflows, and delivers measurable results.</p>
-            <p>My expertise is in building and improving enterprise applications using C#/.NET, JavaScript, REST APIs, and automated testing. I have delivered production features for McDonald’s systems and developed .NET applications for infrastructure analysis. </p>
-            <p>I have experience in cross-functional collaboration, release quality, and using coding agents as development tools. I am also pursuing an M.S. in Computer Science at Georgia Tech, expected to graduate Fall 2027.</p>
+            <p>My background in software engineering spans restaurant technology and rail infrastructure, where I've developed customer-facing applications, backend systems, and internal engineering tools. I've worked on new features, improvements to existing applications, automated testing, and production issues.</p>
+            <p>I enjoy understanding how systems work and figuring out how to approach unfamiliar problems. I care about writing reliable, maintainable software and understanding why certain engineering decisions are made, rather than simply implementing a solution.</p>
+            <p>I'm currently pursuing an M.S. in Computer Science at Georgia Tech, with an expected graduation in Fall 2027. I wanted to build a stronger foundation in computer science and explore areas of computing beyond what I've encountered professionally. My graduate studies and personal projects give me the opportunity to develop new technical skills outside of my day-to-day work.</p>
             <h4>LANGUAGES</h4>
-            <p>Java · C# · JavaScript · SQL · C++</p>
-            <h4>FRAMEWORKS</h4>
-            <p>.NET 5 · Entity Framework Core · React Native · Node.js</p>
+            <p>C# · JavaScript · Java · TypeScript · SQL · Python · C++</p>
+            <h4>FRAMEWORKS & LIBRARIES</h4>
+            <p>.NET · Entity Framework Core · React · React Native</p>
+            <h4>BACKEND & DATA</h4>
+            <p>SQL Server · Node.js · REST APIs</p>
             <h4>TOOLS & PRACTICES</h4>
-            <p>Git · New Relic · CI/CD · REST APIs · Agile</p>
-            <h4>TESTING</h4>
-            <p>Playwright · Automated testing · Integration testing</p>
+            <p>Git · New Relic · CI/CD · Agile · AI-assisted development</p>
+            <h4>TESTING & QUALITY</h4>
+            <p>Playwright · Regression testing · Integration testing · Test automation</p>
           </div>
         </section>
 
         <section className="section" id="experience">
           <div className="section-label">03 / PROFESSIONAL EXPERIENCE</div>
-          <h2>Built in production.<br />Grounded in teams.</h2>
+          <h2>Engineering Across Industries.<br />Experience Across Technologies.</h2>
           <p className="section-description">Enterprise platforms, infrastructure tools, and customer-facing applications.</p>
 
           <div className="job">
             <div><h3>Codagami, Inc.</h3><span>2022 — PRESENT</span></div>
             <div>
               <h4>Software Engineer · Champaign, IL</h4>
+              <p>Developing and maintaining McDonald's self-service ordering and Point of Service software, with responsibilities spanning feature development, production support, test automation, and release management.</p>
               <ul>
-                <li>Architected New Relic observability across 26 McDonald's production services and delivered QR code digital receipts to 15 restaurant locations.</li>
-                <li>Built 368 automated regression tests per deployment, cutting release validation from 2 days to 4 hours.</li>
-                <li>Refactored Point of Service business logic, API orchestration, and application workflows to improve maintainability and responsiveness.</li>
-                <li>Owned weekly release management and partnered with product managers, QA, and stakeholders to demonstrate features and turn feedback into engineering priorities.</li>
+                <li>Developed and refactored C#/.NET business logic, REST API integrations, and PIN pad initialization workflows within the Point of Service platform.</li>
+                <li>Implemented New Relic telemetry across 26 production services and plugins to support application monitoring, performance analysis, and production troubleshooting.</li>
+                <li>Developed a QR code-based digital receipt feature using JavaScript within the Kiosk microservice, integrating receipt generation into existing checkout workflows across 15 restaurant locations.</li>
+                <li>Built an automated regression testing framework using Playwright and JavaScript, executing 368 test cases per production deployment and reducing release validation from two days to four hours.</li>
+                <li>Investigated and resolved production defects across application workflows and regional plugins, including components supporting Canadian restaurant operations.</li>
+                <li>Managed weekly software releases, demonstrated new functionality to stakeholders, and collaborated with product managers and QA engineers to incorporate feedback into future development.</li>
               </ul>
+              <div className="job-technologies">
+                <h5>Technologies</h5>
+                <div className="technology-tags">
+                  {["C#", ".NET", "JavaScript", "REST APIs", "Playwright", "New Relic", "CI/CD", "Claude Code"].map((technology) => (
+                  <span className="technology-tag" key={technology}>
+                  {technology}
+                  </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 

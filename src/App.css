@@ -262,6 +262,35 @@ h2 {
 .job p {
   color: #696861;
   font-size: 13px;
+  line-height: 1.8;
+}
+
+.job-technologies {
+  margin-top: 24px;
+}
+
+.job-technologies h5 {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #77766f;
+  margin: 0 0 12px;
+}
+
+.technology-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.technology-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: #696861;
+  border: 1px solid #dedcd5;
+  padding: 6px 10px;
 }
 
 .education h2 {
