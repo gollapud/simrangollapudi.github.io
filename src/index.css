@@ -1,17 +1,67 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
 
+/* ========================================
+   DESIGN TOKENS
+   ======================================== */
+
 :root {
-  font-family: 'DM Sans', sans-serif;
-  color: #20201e;
-  background: #f8f7f4;
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+
+  /* Text Colors */
+  --color-text: #20201e;
+  --color-heading: #252722;
+  --color-body: #696861;
+  --color-intro: #66645f;
+  --color-muted: #77766f;
+  --color-subtle: #85857c;
+  --color-accent: #858b7c;
+
+  /* Borders */
+  --border-light: #e8e6e1;
+  --border-standard: #dedcd5;
+  --border-code: #e2e0d9;
+  --border-divider: #e4e2dc;
+
+  /* Backgrounds */
+  --background-page: #f8f7f4;
+  --background-code: #eeede8;
+  --background-status: #e9ece4;
+  --background-selection: #d8dfd4;
+
+  /* Syntax Highlighting */
+  --syntax-text: #44463e;
+  --syntax-keyword: #8b6b99;
+  --syntax-string: #73866b;
+
+  /* Status */
+  --color-status: #68735d;
+
+  /* Layout */
+  --page-padding: 7%;
+  --page-padding-mobile: 5%;
+  --section-spacing: 105px;
+
+  /* Global Defaults */
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--background-page);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
 }
 
-* {
+/* ========================================
+   GLOBAL RESET
+   ======================================== */
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -25,11 +75,31 @@ a {
   text-decoration: none;
 }
 
-button, a {
+button {
+  font: inherit;
+}
+
+button,
+a {
   -webkit-tap-highlight-color: transparent;
 }
 
 ::selection {
-  background: #d8dfd4;
-  color: #20201e;
+  background: var(--background-selection);
+  color: var(--color-text);
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+:focus-visible {
+  outline: 2px solid var(--color-heading);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
 }
