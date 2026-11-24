@@ -417,3 +417,115 @@ footer {
     gap: 16px;
   }
 }
+
+/* Selected Projects */
+
+.project-group-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #77766f;
+  margin: 40px 0 20px;
+}
+
+.portfolio-project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  gap: 14px;
+}
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+}
+
+.project-meta .company {
+  text-transform: uppercase;
+}
+
+.project-status {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #68735d;
+  background: #e9ece4;
+  padding: 5px 8px;
+}
+
+.portfolio-project-card h3 {
+  font-size: 23px;
+  font-weight: 500;
+  margin: 4px 0 0;
+}
+
+.project-type {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: #85857c;
+}
+
+.portfolio-project-card p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #696861;
+}
+
+.project-expand {
+  background: transparent;
+  border: none;
+  border-top: 1px solid #dedcd5;
+  width: 100%;
+  padding: 16px 0 0;
+  margin-top: auto;
+  text-align: left;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  color: inherit;
+  cursor: pointer;
+}
+
+.project-expand:hover {
+  color: #77766f;
+}
+
+.project-expand:focus-visible {
+  outline: 2px solid #77766f;
+  outline-offset: 4px;
+}
+
+.project-details {
+  border-top: 1px solid #dedcd5;
+  padding-top: 18px;
+}
+
+.project-details h4 {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin: 16px 0 12px;
+}
+
+.project-details ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.project-details li {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #696861;
+  margin-bottom: 8px;
+}
