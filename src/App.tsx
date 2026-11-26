@@ -70,26 +70,6 @@ function App() {
           </div>
         </section>
 
-         <section className="section" id="work">
-          <div className="section-label">02 / SELECTED PROJECTS</div>
-          <div className="section-heading">
-            <h2>Engineering beyond the workplace.</h2>
-            <p>Personal and academic software projects.</p>
-          </div>
-          <h4 className="project-group-label">Featured Projects</h4>
-          <div className="project-grid featured-project-grid">
-            {featuredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-            ))}
-          </div>
-          <h4 className="project-group-label">Additional Projects</h4>
-          <div className="additional-project-grid">
-            {additionalProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-            ))}
-          </div>
-        </section>
-
         <section className="toolkit">
           <span>MY EVERYDAY TOOLKIT</span>
           <div>JavaScript <span>C# / .NET</span> <span>Playwright</span>
@@ -116,6 +96,26 @@ function App() {
             <p>Git · New Relic · CI/CD · Agile · AI-assisted development</p>
             <h4>TESTING & QUALITY</h4>
             <p>Playwright · Regression testing · Integration testing · Test automation</p>
+          </div>
+        </section>
+
+        <section className="section" id="work">
+          <div className="section-label">02 / SELECTED PROJECTS</div>
+          <div className="section-heading">
+            <h2>Engineering beyond the workplace.</h2>
+            <p>Personal and academic software projects.</p>
+          </div>
+          <h4 className="project-group-label">Featured Projects</h4>
+          <div className="project-grid featured-project-grid">
+            {featuredProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
+          <h4 className="project-group-label">Additional Projects</h4>
+          <div className="additional-project-grid">
+            {additionalProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+            ))}
           </div>
         </section>
 
