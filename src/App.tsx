@@ -70,6 +70,26 @@ function App() {
           </div>
         </section>
 
+         <section className="section" id="work">
+          <div className="section-label">02 / SELECTED PROJECTS</div>
+          <div className="section-heading">
+            <h2>Engineering beyond the workplace.</h2>
+            <p>Personal and academic software projects.</p>
+          </div>
+          <h4 className="project-group-label">Featured Projects</h4>
+          <div className="project-grid featured-project-grid">
+            {featuredProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
+          <h4 className="project-group-label">Additional Projects</h4>
+          <div className="additional-project-grid">
+            {additionalProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
+        </section>
+
         <section className="toolkit">
           <span>MY EVERYDAY TOOLKIT</span>
           <div>JavaScript <span>C# / .NET</span> <span>Playwright</span>
@@ -100,7 +120,7 @@ function App() {
         </section>
 
         <section className="section" id="experience">
-          <div className="section-label">02 / PROFESSIONAL EXPERIENCE</div>
+          <div className="section-label">03 / PROFESSIONAL EXPERIENCE</div>
           <h2>Engineering Across Industries.<br />Experience Across Technologies.</h2>
           <p className="section-description">Enterprise platforms, infrastructure tools, and customer-facing applications.</p>
 
@@ -174,26 +194,6 @@ function App() {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        <section className="section" id="work">
-          <div className="section-label">03 / SELECTED PROJECTS</div>
-          <div className="section-heading">
-            <h2>Engineering beyond the workplace.</h2>
-            <p>Personal and academic software projects.</p>
-          </div>
-          <h4 className="project-group-label">Featured Projects</h4>
-          <div className="project-grid featured-project-grid">
-            {featuredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-            ))}
-          </div>
-          <h4 className="project-group-label">Additional Projects</h4>
-          <div className="additional-project-grid">
-            {additionalProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-            ))}
           </div>
         </section>
 
